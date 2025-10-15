@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de Tarefas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- "defer" executa o script só depois da página estar 100% carregada -->
+    <script src="script.js" defer="defer"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Cria três linhas
+            Cada uma com 12 colunas, ou seja,
+            Cada linha ocupa a tela inteira-->
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center pt-5">Minhas Tarefas</h1>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 pt-3">
+                    <!-- Cria um cartão -->
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- .input-group une o botão e o campo de adição da tarefa -->
+                            <div class="input-group">
+                                <!-- "placeholder" é o texto que aparece até escrevermos algo no campo -->
+                                <input type="text" id="txt-nova-tarefa" class="form-control" placeholder="Adicionar nova tarefa..." />
+                                <input type="button" id="btn-nova-tarefa" class="btn btn-danger" value="Adicionar" />
+                            </div>
+                        </div> <!-- .card-body-->
+                    </div> <!-- .card-->
+                    
+                </div>
+            </div>
+            
+            <div class="row pt-3">
+                <div class="col-12">
+                    <!-- Cria uma lista (ul) -->
+                    <ul class="list-group" id="lista-tarefas">
+                        <!-- Cria um sub-item da lista -->
+                        <!-- "justify-content-between" significa alinhar os elementos:
+                            - á extrema-esquerda (nome da tarefa)
+                            - e á extrema-direita (botões de ação da tarefa) -->
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Tarefa 1
+                                <div>
+                                    <!-- .btn-sm cria um botão pequeno -->
+                                    <!-- .me-2 cria espaçamento ao final do botão (para que os botões não fiquem grudados) -->
+                                    <button class="btn btn-success btn-sm me-2">Concluir</button>
+                                    <button class="btn btn-danger btn-sm">Excluir</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- .container -->
+            </body>
+            </html>
