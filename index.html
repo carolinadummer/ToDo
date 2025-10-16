@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css" />
     <!-- "defer" executa o script só depois da página estar 100% carregada -->
     <script src="script.js" defer="defer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -31,7 +32,7 @@
                             <div class="input-group">
                                 <!-- "placeholder" é o texto que aparece até escrevermos algo no campo -->
                                 <input type="text" id="txt-nova-tarefa" class="form-control" placeholder="Adicionar nova tarefa..." />
-                                <input type="button" id="btn-nova-tarefa" class="btn btn-danger" value="Adicionar" />
+                                <input type="button" id="btn-nova-tarefa" class="btn btn-primary" value="Adicionar" />
                             </div>
                         </div> <!-- .card-body-->
                     </div> <!-- .card-->
@@ -43,19 +44,7 @@
                 <div class="col-12">
                     <!-- Cria uma lista (ul) -->
                     <ul class="list-group" id="lista-tarefas">
-                        <!-- Cria um sub-item da lista -->
-                        <!-- "justify-content-between" significa alinhar os elementos:
-                            - á extrema-esquerda (nome da tarefa)
-                            - e á extrema-direita (botões de ação da tarefa) -->
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Tarefa 1
-                                <div>
-                                    <!-- .btn-sm cria um botão pequeno -->
-                                    <!-- .me-2 cria espaçamento ao final do botão (para que os botões não fiquem grudados) -->
-                                    <button class="btn btn-success btn-sm me-2">Concluir</button>
-                                    <button class="btn btn-danger btn-sm">Excluir</button>
-                                </div>
-                            </li>
+                        
                         </ul>
                     </div>
                 </div> <!-- .container -->

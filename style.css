@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Hegarty&family=Frijole&display=swap');
+h1 {
+    font-family: "Frijole", system-ui;
+    color: rgb(0, 170, 255);
+}
+body {
+    background-color: rgb(215, 242, 255);
+}
+.card {
+    background-color: rgb(185, 234, 255);
+}
+input[type="text"] {
+    background-color:  white;
+}
+#btn-nova-tarefa {
+    background-color: rgb(0, 170, 255);
+    border: 1px solid rgb(0, 170, 255);
+}
+
+#btn-nova-tarefa:hover {
+    background-color: rgb(185, 234, 255);
+    color: rgb(0, 170, 255);
+}
+
+.list-group-item {
+    background-color: rgb(185, 234, 255);
+    border: 1px solid rgb(155, 215, 241);
+}
