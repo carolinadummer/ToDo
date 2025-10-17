@@ -45,8 +45,27 @@
                     <!-- Cria uma lista (ul) -->
                     <ul class="list-group" id="lista-tarefas">
                         
-                        </ul>
+                    </ul>
+                </div>
+            </div> <!-- .container -->
+           
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Excluir Tarefa</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Você deseja excluir a tarefa selecionada?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-white" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" onclick="excluirTarefa()">Excluir</button>
+                        </div>
                     </div>
-                </div> <!-- .container -->
-            </body>
-            </html>
+                </div>
+            </div>
+        </body>
+        </html>
