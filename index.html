@@ -10,62 +10,63 @@
     <link rel="stylesheet" href="style.css" />
     <!-- "defer" executa o script só depois da página estar 100% carregada -->
     <script src="script.js" defer="defer"></script>
+    <script src="https://rawcdn.githack.com/eduardomozart/draggable-js/refs/heads/main/draggable.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
 </head>
 <body>
     <div class="container">
         <!-- Cria três linhas
-            Cada uma com 12 colunas, ou seja,
-            Cada linha ocupa a tela inteira-->
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center pt-5">Minhas Tarefas</h1>
-                </div>
+        Cada uma com 12 colunas, ou seja,
+        Cada linha ocupa a tela inteira-->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center pt-5">Minhas Tarefas</h1>
             </div>
-            
-            <div class="row">
-                <div class="col-12 pt-3">
-                    <!-- Cria um cartão -->
-                    <div class="card">
-                        <div class="card-body">
-                            <!-- .input-group une o botão e o campo de adição da tarefa -->
-                            <div class="input-group">
-                                <!-- "placeholder" é o texto que aparece até escrevermos algo no campo -->
-                                <input type="text" id="txt-nova-tarefa" class="form-control" placeholder="Adicionar nova tarefa..." />
-                                <input type="button" id="btn-nova-tarefa" class="btn btn-primary" value="Adicionar" />
-                            </div>
-                        </div> <!-- .card-body-->
-                    </div> <!-- .card-->
+        </div>
+        
+        <div class="row">
+            <div class="col-12 pt-3">
+                <!-- Cria um cartão -->
+                <div class="card">
+                    <div class="card-body">
+                        <!-- .input-group une o botão e o campo de adição da tarefa -->
+                        <div class="input-group">
+                            <!-- "placeholder" é o texto que aparece até escrevermos algo no campo -->
+                            <input type="text" id="txt-nova-tarefa" class="form-control" placeholder="Adicionar nova tarefa..." />
+                            <input type="button" id="btn-nova-tarefa" class="btn btn-primary" value="Adicionar" />
+                        </div>
+                    </div> <!-- .card-body-->
+                </div> <!-- .card-->
+                
+            </div>
+        </div>
+        
+        <div class="row pt-3">
+            <div class="col-12">
+                <!-- Cria uma lista (ul) -->
+                <ul class="list-group" id="lista-tarefas">
                     
-                </div>
+                </ul>
             </div>
-            
-            <div class="row pt-3">
-                <div class="col-12">
-                    <!-- Cria uma lista (ul) -->
-                    <ul class="list-group" id="lista-tarefas">
-                        
-                    </ul>
-                </div>
-            </div> <!-- .container -->
-           
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Excluir Tarefa</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Você deseja excluir a tarefa selecionada?
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-white" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-primary" onclick="excluirTarefa()">Excluir</button>
-                        </div>
+        </div> <!-- .container -->
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Excluir Tarefa</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Você deseja excluir a tarefa selecionada?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-white" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" onclick="excluirTarefa()">Excluir</button>
                     </div>
                 </div>
             </div>
-        </body>
-        </html>
+        </div>
+    </body>
+    </html>
